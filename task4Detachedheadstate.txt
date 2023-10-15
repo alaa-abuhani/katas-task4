@@ -1,0 +1,27 @@
+1 - $ git status
+
+HEAD detached at 6c25ad8
+nothing to commit, working tree clean
+
+ git log --oneline --graph --all
+
+* 9661e38 (master) D
+* bd12225 C
+* 84f3416 B
+* 6c25ad8 (HEAD) A
+
+2- git checkout master
+
+Previous HEAD position was 6c25ad8 A
+Switched to branch 'master'
+
+3-
+ git status
+On branch master
+nothing to commit, working tree clean
+
+git log --oneline --graph --all
+* 9661e38 (HEAD -> master) D
+* bd12225 C
+* 84f3416 B
+* 6c25ad8 A

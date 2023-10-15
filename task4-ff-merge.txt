@@ -1,0 +1,61 @@
+1-git branch feature/uppercase
+
+2- git checkout feature/uppercase
+
+3-
+ On branch feature/uppercase
+nothing to commit, working tree clean
+
+4-echo HELLO > greeting.txt
+
+5- 
+git add greeting.txt
+warning: in the working copy of 'greeting.txt', LF will be replaced by CRLF the next time Git touches it
+
+ git commit -m "add uppercase"
+[feature/uppercase 8275de2] add uppercase
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+
+6-  git branch
+
+* feature/uppercase
+  master
+
+7- 
+* 8275de2 (HEAD -> feature/uppercase) add uppercase
+* 9a3de0c (master) Add content to greeting.txt
+* 0ecbdbf Add file greeting.txt
+
+8-  git checkout master
+ Switched to branch 'master'
+ 
+9- cat greeting.txt
+hello
+
+-10  git diff master feature/uppercase
+
+diff --git a/greeting.txt b/greeting.txt
+index ce01362..e427984 100644
+--- a/greeting.txt
++++ b/greeting.txt
+@@ -1 +1 @@
+-hello
++HELLO
+
+-11 git merge feature/uppercase
+Updating 9a3de0c..8275de2
+ Fast-forward
+ greeting.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-12 cat greeting.txt
+    HELLO
+
+-13  git branch -d feature/uppercase
+
+Deleted branch feature/uppercase (was 8275de2).
+
+
+
+
